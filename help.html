@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guard My Angel</title>
+  
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600|Habibi' rel='stylesheet' type='text/css'>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  
+  <script src="scripts.js" type="text/javascript"></script>
+</head>
+<body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=185064321528892";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <div id="overlay"></div>
+  <div id="overlay_box">
+    <iframe class="intro_movie" id="intro_movie" width="560" height="315" src="http://www.youtube.com/embed/oq-iCdrMFrg?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+    <div class="close"></div>
+  </div>
+  <header>
+    <div class="wrapper full">
+      <nav>
+        <ul>
+          <li><a href="./landing.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./faq.html">Q&A</a></li>
+          <li><a href="./reviews.html">Reviews</a></li>
+          <li><a href="./tos.html">Terms of Service</a></li>
+          <li><a href="./help.html">Help Pages</a></li>
+        </ul>
+      </nav>
+      <img src="img/logo.png" alt="logo" />
+      <div class="fb-like" data-href="https://www.facebook.com/guardmyangel" data-send="true" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+    </div>
+  </header>
+  <div class="wrapper full">
+    <h1>Help</h1>
+    <section id="contents">
+      <nav>
+        <h2>Topics</h2>
+        <ul>
+          <li><a href="#start">Getting Started</a></li>
+          <li><a href="#settings">Settings</a></li>
+          <li><a href="#notifications">Emergency Notifications</a></li>
+        </ul>
+      </nav>
+    </section> 
+    
+    <section id="start">
+      <div class="to_top"><a href="#">Back to top.</a></div>
+      <h2>Getting Started</h2>
+      <div id="video_mbl">
+        <iframe class="intro_movie" width="560" height="315" src="http://www.youtube.com/embed/oq-iCdrMFrg?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <p class="intro">'Guard My Angel' is a simple application that provides the comfort of knowing that someone will help you if you get into an emergency situation. </p>
+      
+      <h3>Basic Functions:</h3>
+      <dl>
+        <dt>Panic Button</dt>
+        <dd>click the SOS button for an immediate help notification.</dd>
+        <dt>Watch Over Me</dt>
+        <dd>Click the Watch Over Me button when you'd like our service to watch over you for a duration of time you decide and configure.</dd>
+      </dl>
+      <p>When you are safe and no longer wish our service to watch over you, you can stop the service countdown by clicking the <em>I'm OK!</em>  button and we will avoid sending any emergency notification to your configured contacts.</p>
+      <p>If the countdown expires without you stopping it, our service will send notifications to the contacts you configured in your set-up. Notifications will be sent even if the phone is dead or no longer in your possession.</p>
+      
+      <h3>Notes:</h3>
+      <ul>
+        <li>The service requires active Internet connection.</li>
+        <li>We will not disclose the information we captured from the mobile device unless you reach an emergency state.</li>
+        <li>The information that we keep during the time we watch you will be removed from our server after 24 hours and
+        cannot be retrieved.</li>
+      </ul>
+      
+      <h3>The Application has three main modes:</h3>
+      <dl>
+        <img src="img/state_idle.png" alt="idle mode icon" class="state_icon"/>
+        <dt>IDLE mode</dt>
+        <dd>The application is inactive and does nothing.</dd>
+        <img src="img/state_watching.png" alt="active mode icon" class="state_icon"/>
+        <dt>ACTIVE mode</dt>
+        <dd>After clicking the <em>Watch Over Me</em> button, our service will track your mobile device by collecting
+        information from its sensors. The information is collected periodically for efficient battery usage and sent via the
+        phone's Internet connection to our servers.</dd>
+        <img src="img/state_emergency.png" alt="emergency mode icon" class="state_icon"/>
+        <dt>EMERGENCY mode</dt>
+        <dd>When you may be in an emergency situation and the contacts in your notification list will be notified.</dd>
+      </dl>
+      <p>Your notification list of contacts will received notice that you may be in an emergency situation and will be able to get information about your last known location and periodic locations from the point you requested our service to watch over you. Most importantly, your most recent location will continue to be updated periodically for 4 hours after your have reached
+      an emergency situation or until you ask the service to stop watching over you.</p>
+    </section>
+    
+    <section id="settings">
+      <div class="to_top"><a href="#">Back to top.</a></div>
+      <h2>Settings</h2>
+      <h4>To access settings page - click the Menu button on the phone and choose settings.</p>
+      
+      <h3>Notification list:</h3>
+      <p>The notification section enables you to configure to whom the notification will be sent and the type of notification that will be used in the case you reach an emergency state.</p>
+      <p>Notifications are provided in three ways: SMS, email and Facebook</p>
+      
+      <h4>SMS notifications</h4>
+      <img src="img/settings_text.png" alt="text message settings" />
+      <ul>
+        <li>To Enable/Disable SMS notifications, click the Send SMS check-box.</li>
+        <li>To edit the list of contacts that will be notified via SMS, click the edit button</li>
+        <li>The number of contacts you selected are indicated in the closed brackets (3 in the above example)</li>
+        <li>To Edit the your SMS contact list, simply click the edit button</li>
+      </ul>
+      
+      <h4>Email Notification</h4>
+      <img src="img/settings_email.png" alt="email settings" />
+      <ul>
+        <li>To Enable/Disable Email notifications, click the Send Email check-box.</li>
+        <li>To edit the list of contacts that will be notified via Email, click the edit button</li>
+        <li>The number of contacts you selected are indicated in the closed brackets (3 in the above example)</li>
+        <li>To Edit the your Email contact list, simply click the edit button</li>
+      </ul>
+      
+      <h4>Facebook notification</h4>
+      <img src="img/settings-fb.png" alt="Facebook settings" />
+      <ul>
+        <li>To Enable/Disable Facebook notifications, click the <em>Post on my wall</em> check-box.</li>
+        <li>To Sign in/out from Facebook account, click the <em>sign in/out</em> button</li>
+        <li>The Status test at the bottom indicate if you are signed in or out from facebook and your screen name in use if
+        you are actively signed in (signed in as Amir C in the above example).</li>
+      </ul>
+      
+      <h3>Auto Emergency Triggers</h3>
+      <img src="img/settings-emg.png" alt="emergency settings" />
+      <p>Car accidents exert extreme acceleration forces on the phone.</p>
+      <p>When you activate the application with 'Watch Over Me' and this option is enabled, we will monitor your acceleration and trigger emergency alert as soon as we identify abnormal forces that are typically observed during car accident.</p>
+      <p>We will trigger and alert only when the forces exceed 5G-Force that are unlikely to occur when dropping the phone.
+      Enabling this option does consume more battery, but it is optimized for minimal battery usage.</p>
+      <p>To Enable/Disable the abnormal acceleration detection you can simply click the <em>Enable Auto detect accident</em> check-box.</p>
+      
+      <h3>Passwords</h3>
+      <img src="img/settings-pass.png" alt="password settings" />
+      <p>You can protect your service with a 4 digit password for your safety.
+      When enabled, it provides an extra level of security and requires the user to
+      type in the same 4 digit pin-code to stop an active session.</p>
+      <p>When enabling the password, you will be asked to enter a 4 digit pin-code when you click on the enable box. You can disable it at any time, but if you are in an active session it will require you to re-enter your pin-code beforehand.</p>
+      
+      <h3>Reminder</h3>
+      <img src="img/settings-rem.png" alt="reminder settings" />
+      <p>When you ask our service to watch over you for any duration you pick in advance, you will get a reminder 5 minutes
+      before the timer expires to avoid false alarms.
+      On an android device the reminder will pop up in the status bar, vibrate your phone, and play an audible notification.
+      The audible notification can be disabled for your safety if needed</p>
+      <p>To Enable/Disable the audio notification you can simply click the Enable audio reminder check-box.</p>
+      
+      <h3>Personal Details</h3>
+      <img src="img/settings-info.png" alt="reminder settings" />
+      <p>This section is optional , but It is highly recommended to fill in your personal details.</p>
+      <p>The name you choose will be used to identify you by your contacts in the notification list, you can choose any name or keyword
+      that will be recognized by the receiver of the emergency request.</p>
+      <p>The phone number may also be included in the emergency notification for quicker access to call you back.</p>
+      <p>The email you enter may be used by our service to send you important updates regarding the service.</p>
+      
+      <h3>SMS List</h3>
+      <img src="img/SMS-contact-page.png" alt="contact list" />
+      <p>The SMS List page enables you to control the list of contacts that will be notified via SMS in case of reaching an emergency state.</p>
+      <p>Click on the Add button to either add your contacts manually or from your address book.</p>
+      
+      <p>If you enter a name and phone number manually for a new contact:</p>
+      <ul>
+        <li>Only valid number will be accepted</li>
+        <li>The number will be converted automatically to international format  (<a href="http://en.wikipedia.org/wiki/E.164">E-164</a>)</li>
+        <li>Note: The added contact will be added to your Email list, but will not be added to your phone contact list</li>
+      </ul>
+      <h4>If you enter a contact from your existing contacts on the phone:</h4>
+      <ul>
+        <li>Only valid numbers will be accepted</li>
+        <li>The number will be converted automatically to international format  (<a href="http://en.wikipedia.org/wiki/E.164">E-164</a>)</li>
+        <li>If the selected phone contact includes multiple valid numbers, all will be added to the list, and you can delete
+        the one you do not wish to notify after added to the list</li>
+      </ul>
+      <h4>Click the red colored 'X' to remove a contact from your list</h4>
+      <p>The number of contacts that will receive an SMS message during an emergency depends on the type of package you own. If you enter more contacts than your quota you will see a warning message and a button to upgrade. See more about upgrades here.</p>
+      
+      <h3>Email List</h3>
+      <img src="img/Email-contact-page.png" alt="contact list" />
+      <p>The Email List page enables you to control the list of contact that will be notified via email in case of reaching emergency state. Click on the Add button to either add your contacts manually or from your address book.</p>
+      <h4>If you enter a name and an email manually for a new contact:</h4>
+      <ul>
+        <li>Only valid email address will be accepted</li>
+        <li>Note: The added contact will be added to your Email list, but will not be added to your phone contact list</li>
+      </ul>
+      <h4>If you enter a contact from your existing contacts on the phone:</h4>
+      <ul>
+        <li>Only valid email address will be accepted</li>
+        <li>If the selected phone contact includes multiple valid emails, all will be added to the list, and you can delete the ones you do not wish to notify after added to the list.</li>
+      </ul>
+      <p>Click the red colored 'X' to remove a contact from your list</p>
+      <p>The number of contacts that will receive an Email message during an emergency depends on the type of package you own. If you enter more contacts than your quota you will see a warning message and a button to upgrade. See more about upgrades here.</p>
+    </section>
+    
+    <section id="notifications">
+      <div class="to_top"><a href="#">Back to top.</a></div>
+      <h2>Emergency Notifications</h2>
+      <p>When your application reaches an emergency state, our servers will send notification with a request for help to the contacts you selected in advance and/or post on your Facebook wall such request.</p>
+      <p>The notification will include text that either suggest that you may be in emergency situation
+      (in the case that the count-down expired) or that you asked for immediate help (if you clicked the SOS button)</p>
+      <p>If we already collected location information from your mobile device each notifier will get a link to a map that they can
+      open on any device that is capable of showing ‘Google Maps’. The map link can be refreshed to get the most updated
+      location information from our server.</p>
+      
+      <h4>The map link provided to the notified contact includes information about your location as follows:</h4>
+      <p>Last location is indicated by   and placed on the last location received from the mobile device.</p>
+      <p>The receiver can click on the icon to get more information</p>
+      <ul>
+        <li>The time the mobile was in the specified location</li>
+        <li>The battery level of the device</li>
+        <li>The accuracy of the location that was received from the mobile</li>
+      </ul>
+      <p>Start location is indicated by the default Google place mark and points to the first location
+      received from the mobile device – typically in the area the user pressed the Watch Over Me button.</p>
+      
+      <h4>The receiver can click on the icon to get more information including:</h4>
+      <ul>
+        <li>The time the mobile was in the specified location</li>
+        <li>The battery level of the device</li>
+        <li>Path – purple line connecting the locations that were received from the mobile device.</li>
+      </ul>
+      
+      <h4>Trip information example from mobile browser:</h4>
+      <img src="img/romeMap.jpg" alt="Map Example on Mobile" />
+      
+      <h4>Trip information example from a desktop browser:</h4>
+      <img src="img/MapExampleDesktop.jpeg" alt="Map Example on Desktop" class="large" />
+      
+    </section>
+  </div>
+  <footer>
+    <div class="wrapper full">
+      <span class="copy">&copy; 2012 Cayo-Tech Communication Ltd. </span>
+    </div>
+  </footer>
+</body>
+</html>

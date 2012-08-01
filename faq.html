@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guard My Angel</title>
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600|Habibi' rel='stylesheet' type='text/css'>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  
+  <script src="scripts.js" type="text/javascript"></script>
+</head>
+<body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=185064321528892";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <div id="overlay"></div>
+  <div id="overlay_box">
+  <div class="close"></div>
+  </div>
+  <header>
+    <div class="wrapper full">
+      <nav>
+        <ul>
+          <li><a href="./landing.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./faq.html">Q&A</a></li>
+          <li><a href="./reviews.html">Reviews</a></li>
+          <li><a href="./tos.html">Terms of Service</a></li>
+          <li><a href="./help.html">Help Pages</a></li>
+        </ul>
+      </nav>
+      <img src="img/logo.png" alt="logo" />
+      <div class="fb-like" data-href="https://www.facebook.com/guardmyangel" data-send="true" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+    </div>
+  </header>
+  	<div class="wrapper full">
+  	<h1>Q&A</h1>
+  	  <section id="contents">
+  	    <nav>
+  	      <h2>Topics</h2>
+  	      <ul>
+  	        <li><a href="#privacy">Privacy</a></li>
+  	        <li><a href="#notifications">Notifications</a></li>
+  	        <li><a href="#location">Location Information</a></li>
+  	        <li><a href="#settings">Settings</a></li>
+  	      </ul>
+  	    </nav>
+  	  </section>
+  		<section id="privacy">
+  		  <div class="to_top"><a href="#">Back to top.</a></div>
+    		<h2>Privacy</h2>
+    		<h3>Is my location information available before I reach emergency state?</h3>
+    		<p>No, we provide access to this information only when we send the notifications to your pre-defined contacts.
+    		We also allow you to share your location information with your friends after you indicate you are OK.</p>
+    		<h3>For how long does the location information in the server is kept?</h3>
+    		<p>We clear trip information periodically for trips that took place more than 24 hours ago.</p>
+    		<p>We don't delete trip information if you decided to share it with your friends.</p>
+    		
+    		<h3>Who can access my trip information?</h3>
+    		<p>After we send the notification, the trip information is available to anyone who has the link we published in the emergency notification. you can forward the information to other friends by sending the link.</p>
+    		<p>The link will not work after we delete the information from the servers &#8211; after 24 hours,<br />
+    		unless you decided to share your trip information with your friends.</p>
+    		<h3>Why do we ask for permissions?</h3>
+    		
+  
+  		  <h4>YOUR LOCATION - FINE (GPS) LOCATION</h4>
+    		<p>This permission is required so we can provide your contacts a map with your route in the case of an emergency. Of course we dont disclose this information to anyone unless you reach an emergency situation and we delete this information completely after 24 hours from our servers.</p>
+    		
+    		<h4>NETWORK COMMUNICATION - FULL INTERNET ACCESS</h4>
+    		<p>We require this permission so we can send the information we collect from your device to our servers. In case of an emergency we send a notification from our servers and not your device to provide a reliable service (so even if your phone breaks your contacts will still get a notification).</p>
+    		
+    		<h4>YOUR PERSONAL INFORMATION - READ CONTACT DATA</h4>
+    		<p>We ask permission to read your contacts so you will be able to add contacts from your address book to your notification list and not add them manually.</p>
+      		
+    		<h4>PHONE CALLS - READ PHONE STATE AND IDENTITY</h4>
+    		  <p>There are 2 reasons for this permission:</p>
+    		  <ol>
+        		<li>We need to determine your locality (the language the phone is set to, and your country code) so we can send adjust automatically your local number for global use from our servers around the world.</li>
+        		<li>We save you the need to enter information about yourself (name/phone) in order to identify you to your contacts. (Note: not implemented at the moment)</li>
+    		  </ol>
+    		  
+    		<h4>SYSTEM TOOLS - PREVENT DEVICE FROM SLEEPING</h4>
+    		<p>This is a very important permission that allows us to collect your location even when the device is in sleep mode. This happens for example when you are not using your phone and screen is off. Without this permission we wouldn't be able to get your complete trip information.</p>
+    		<p>Your contacts may get partial information about your location and will not be able to give you the help you need.</p>
+    	</section>
+    	
+    	<section id="location">
+    	  <div class="to_top"><a href="#">Back to top.</a></div>
+    		<h2>Location Information</h2>
+    		<h3>How accurate is the location information provided during an emergency?</h3>
+    		<p>The accuracy of the location retrieved from the mobile device depends on many factors.
+    		The estimated accuracy information for your first and last location information in the map is
+    		provided in the notifications if you reach emergency state.</p>
+    		
+    		<h3>Can you capture my location indoors?</h3>
+    		<p>Yes, Location information may be retrieved from GPS satellites, Wi-Fi, and/or mobile network.
+    		When GPS based location is not able to be determined, we will try to get your location via other means
+    		(Wi-Fi and mobile network).</p>
+    		
+    		<h3>Why the map do not include my complete path information?</h3>
+    		<p>We do not capture your mobile  location information continuously to save on battery consumption.
+    		We have worked hard to optimize the application to be as efficient on your battery as possible to enable
+    		you to run the application and use your phone normally otherwise for as long as you need it.</p>
+  
+    </section>
+    
+    <section id="notifications">
+      <div class="to_top"><a href="#">Back to top.</a></div>
+      <h2>Notifications</h2>
+      <h3>Will my contacts get a notification if my phone breaks or shuts down?</h3>
+      <p>Yes, the notifications are sent from our server and NOT sent from your mobile device.
+      So even if your device is not working from any reason your contacts will still get a notification
+      once the timer you set expires.</p>
+      
+      <h3>How many text messages sent for each contact?</h3>
+      <p>In an emergency situation we send up to two text messages for each contact in your list.</p>
+      <ul>
+        <li>The first text message sent as soon as the service identifies you are in an emergency situation, even if we do not have location information for you yet (which would usually only happen if you clicked the SOS button before you asked us to watch you).</li>
+        <li>The second text message is sent if we received location information from the mobile device and the first text message did not include location information.</li>
+      </ul>
+      
+      <h3>What information is included in the text message notification?</h3>
+      <p>The first text message includes the following:</p>
+      <h4>On countdown expiration</h4>
+        <ul>
+          <li>If location information is available:<em> < Your name > may be in emergency situation + link to map</em></li>
+          <li>If not: <em>< Your name> may be in emergency situation + no location info yet.</em></li>
+        </ul>
+      <h4>The second text message includes the following:  New location received for <Your name>  + link to map</h4>
+      <h3>Does the application send text message from my phone?</h3>
+      <p>No, all notifications are sent from our servers. Text messages are sent from a US number.</p>
+      <h3>When does the 'Automatic Car Accident' detection trigger an alert?</h3>
+      <p>Car accidents exert extreme acceleration forces on the phone.
+      When you activate the application with 'Watch Over Me' and this option is enabled, we will monitor your acceleration and trigger emergency alert as soon as we identify abnormal forces that are typically observed during car accident.
+      We will trigger an alert only when the forces exceed 5G-Force that are unlikely to occur when dropping the phone.</p>
+    </section>
+   	<section id="settings">
+   	  <div class="to_top"><a href="#">Back to top.</a></div>
+   	  <h2>Settings</h2>
+   	  <h3>I am trying to add a phone number to the text messages contact list and getting 'Invalid number' error</h3>
+   	  <p>You can enter phone numbers in almost any format. However, there are still some cases that the phone number is considered 'invalid'. When entering a phone number,  the country code is fetched from your phone and then added to the phone number you entered (if the country code is not already part of the number). In case your phone doesn't have a sim card or for some other reason the country code is not available, you will get the 'invalid number' error.</p>
+   	  <p>To overcome this you can enter the phone number in the following format manually:  + < country-code > < number ></p>
+   	  <p>For example, for the U.S number:  408-555-5555 enter +14085555555. If you don't know the country code, check it out <a href="http://en.wikipedia.org/wiki/List_of_country_calling_codes">here</a></p>
+   	
+   	</section>
+  </div>
+  <footer>
+    <div class="wrapper full">
+      <span class="copy">&copy; 2012 Cayo-Tech Communication Ltd. </span>
+    </div>
+  </footer>
+</body>
+</html>
